@@ -1,7 +1,7 @@
-mod triangle;
-use triangle::Solution;
+mod best_time_to_buy_and_sell_stock;
+use best_time_to_buy_and_sell_stock::Solution;
 
 fn main() {
-    let data = vec![vec![2], vec![3, 4], vec![6, 5, 7], vec![4, 1, 8, 3]];
-    println!("{}", Solution::minimum_total(data));
+    let data = vec![7, 1, 5, 3, 6, 4];
+    println!("{}", Solution::max_profit(data));
 }
