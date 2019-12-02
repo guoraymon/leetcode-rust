@@ -1,7 +1,7 @@
-mod fibonacci_number;
-use fibonacci_number::Solution;
+mod house_robber;
+use house_robber::Solution;
 
 fn main() {
-    let data = 0;
-    println!("{}", Solution::fib(data));
+    let data = vec![0, 1];
+    println!("{}", Solution::rob(data));
 }
