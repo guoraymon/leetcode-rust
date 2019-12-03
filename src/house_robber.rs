@@ -16,26 +16,20 @@ impl Solution {
     状态转义方程：dp[n] = max(nums[n] + dp[n-2], dp[n-1])
     */
     pub fn rob(nums: Vec<i32>) -> i32 {
-        let len = nums.len();
-        if len == 0 {
-            return 0;
-        }
+        match nums.len() {
+            0 => 0,
+            1 => nums[0],
+            2 => max(nums[0], nums[1]),
+            _ => {
+                let mut dp = vec![0; nums.len()];
+                dp[0] = nums[0];
+                dp[1] = max(nums[0], nums[1]);
 
-        if len == 1 {
-            return nums[0];
+                for i in 2..dp.len() {
+                    dp[i] = max(nums[i] + dp[i - 2], dp[i - 1]);
+                }
+                *dp.last().unwrap()
+            }
         }
-
-        if len == 2 {
-            return max(nums[0], nums[1]);
-        }
-
-        let mut dp = vec![0; max(2, nums.len())];
-        dp[0] = nums[0];
-        dp[1] = max(nums[0], nums[1]);
-
-        for i in 2..dp.len() {
-            dp[i] = max(nums[i] + dp[i - 2], dp[i - 1]);
-        }
-        dp[len - 1]
     }
 }
