@@ -4,4 +4,6 @@ mod triangle;
 
 mod best_time_to_buy_and_sell_stock_ii;
 
+mod maximal_square;
+
 fn main() {}
