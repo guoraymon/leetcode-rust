@@ -9,4 +9,5 @@ mod maximum_subarray;
 
 mod longest_increasing_subsequence;
 
+mod longest_common_prefix;
 fn main() {}
