@@ -1,5 +1,7 @@
 pub struct Solution {}
 
+/// 1160. 拼写单词
+/// https://leetcode-cn.com/problems/find-words-that-can-be-formed-by-characters/
 impl Solution {
     pub fn count_characters(words: Vec<String>, chars: String) -> i32 {
         let mut res = 0;
