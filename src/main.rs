@@ -10,4 +10,6 @@ mod maximum_subarray;
 mod longest_increasing_subsequence;
 
 mod longest_common_prefix;
+mod find_words_that_can_be_formed_by_characters; // 1160 拼写单词
+
 fn main() {}
