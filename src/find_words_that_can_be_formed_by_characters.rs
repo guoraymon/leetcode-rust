@@ -20,7 +20,7 @@ impl Solution {
         res as i32
     }
 
-    // 返回单词中字母出现次数的数组
+    // 返回单词中字母出现次数的数组(单词仅包含小写字母)
     pub fn chars_count(chars: &String) -> [u8; 26] {
         let mut count = [0 as u8; 26];
         for char in chars.chars() {
