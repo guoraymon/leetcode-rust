@@ -12,6 +12,7 @@ mod longest_increasing_subsequence;
 mod longest_common_prefix;
 
 mod find_words_that_can_be_formed_by_characters; // 836. 矩形重叠
-mod rectangle_overlap; // 1160 拼写单词
+mod longest_palindrome; // 409. 最长回文串
+mod rectangle_overlap; // 1160. 拼写单词
 
 fn main() {}
