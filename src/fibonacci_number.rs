@@ -23,3 +23,15 @@ impl Solution {
         dp[n]
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    extern crate test;
+    use test::Bencher;
+
+    #[bench]
+    fn bench_add_two(b: &mut Bencher) {
+        b.iter(|| Solution::fib(50));
+    }
+}

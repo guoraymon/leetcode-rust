@@ -26,14 +26,26 @@ impl Solution {
     }
 }
 
-#[test]
-fn test() {
-    assert_eq!(Solution::longest_palindrome(String::from("abccccdd")), 7);
-    assert_eq!(Solution::longest_palindrome(String::from("AAAAAA")), 6);
-    assert_eq!(
-        Solution::longest_palindrome(String::from(
-            "zeusnilemacaronimaisanitratetartinasiaminoracamelinsuez"
-        )),
-        55
-    );
+#[cfg(test)]
+mod tests {
+    use super::*;
+    extern crate test;
+    use test::Bencher;
+
+    #[test]
+    fn test() {
+        assert_eq!(Solution::longest_palindrome(String::from("abccccdd")), 7);
+        assert_eq!(Solution::longest_palindrome(String::from("AAAAAA")), 6);
+        assert_eq!(
+            Solution::longest_palindrome(String::from(
+                "zeusnilemacaronimaisanitratetartinasiaminoracamelinsuez"
+            )),
+            55
+        );
+    }
+
+    #[bench]
+    fn bench_add_two(b: &mut Bencher) {
+        b.iter(|| Solution::longest_palindrome(String::from("AAAAAA")));
+    }
 }
