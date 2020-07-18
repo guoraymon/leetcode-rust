@@ -1,5 +1,3 @@
-use std::cmp::max;
-
 pub struct Solution {}
 
 /// 509. 斐波那契数
@@ -17,27 +15,10 @@ impl Solution {
     /// 递归
     pub fn recursion(n: i32) -> i32 {
         if n < 2 {
-            n
-        } else {
-            Solution::recursion(n - 1) + Solution::recursion(n - 2)
-        }
-    }
-
-    /// 迭代
-    pub fn iter(n: i32) -> i32 {
-        fn iter(n1: i32, n: i32, count: i32) -> i32 {
-            if count == 0 {
-                n
-            } else {
-                iter(n1 + n, n1, count - 1)
-            }
+            return n;
         }
 
-        if n < 2 {
-            n
-        } else {
-            iter(2, 1, n - 2)
-        }
+        Solution::recursion(n - 1) + Solution::recursion(n - 2)
     }
 
     /// 动态规划
@@ -47,8 +28,12 @@ impl Solution {
     /// 状态转移方程：dp[n] = dp[n-1] + dp[n-2]
     /// ```
     pub fn dp(n: i32) -> i32 {
+        if n < 2 {
+            return n;
+        }
+
         let n = n as usize;
-        let mut dp = vec![0; max(2, n + 1)];
+        let mut dp = vec![0; n + 1];
         dp[0] = 0;
         dp[1] = 1;
 
@@ -57,6 +42,21 @@ impl Solution {
         }
 
         dp[n]
+    }
+
+    /// 迭代
+    pub fn iter(n: i32) -> i32 {
+        let mut current = 0;
+        let mut prev1 = 0;
+        let mut prev2 = 1;
+
+        for _ in 0..n {
+            current = prev1 + prev2;
+            prev2 = prev1;
+            prev1 = current;
+        }
+
+        current
     }
 
     /// 通项公式
