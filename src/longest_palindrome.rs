@@ -1,9 +1,29 @@
 use std::collections::HashMap;
 
+/// 最长回文串
+///
+/// 来源：[LeetCode](https://leetcode-cn.com/problems/longest-palindrome/)
+///
+/// ```text
+/// 给定一个包含大写字母和小写字母的字符串，找到通过这些字母构造成的最长的回文串。
+/// 在构造过程中，请注意区分大小写。比如 "Aa" 不能当做一个回文字符串。
+///
+/// 注意:
+/// 假设字符串的长度不会超过 1010。
+///
+/// 示例 1:
+///
+/// 输入:
+/// "abccccdd"
+///
+/// 输出:
+/// 7
+///
+/// 解释:
+/// 我们可以构造的最长的回文串是"dccaccd", 它的长度是 7。
+/// ```
 pub struct Solution {}
 
-/// 409. 最长回文串
-/// https://leetcode-cn.com/problems/longest-palindrome/
 impl Solution {
     pub fn longest_palindrome(s: String) -> i32 {
         // 字符计次(字符仅包含大写及小写字母)
@@ -29,8 +49,6 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-    extern crate test;
-    use test::Bencher;
 
     #[test]
     fn test() {
@@ -42,10 +60,5 @@ mod tests {
             )),
             55
         );
-    }
-
-    #[bench]
-    fn bench_add_two(b: &mut Bencher) {
-        b.iter(|| Solution::longest_palindrome(String::from("AAAAAA")));
     }
 }
