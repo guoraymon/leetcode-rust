@@ -19,6 +19,9 @@ pub mod house_robber;
 /// 打家劫舍 II
 pub mod house_robber_ii;
 
+/// 整数拆分
+pub mod integer_break;
+
 /// 最长公共前缀
 pub mod longest_common_prefix;
 
