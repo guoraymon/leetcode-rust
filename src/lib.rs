@@ -34,6 +34,9 @@ pub mod longest_palindrome;
 /// 最大正方形
 pub mod maximal_square;
 
+/// 魔术索引
+pub mod magic_index_lcci;
+
 /// 二叉树的最大深度
 pub mod maximum_depth_of_binary_tree;
 
