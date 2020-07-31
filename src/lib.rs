@@ -49,5 +49,8 @@ pub mod rectangle_overlap;
 /// 三角形最小路径和
 pub mod triangle;
 
+/// 两数之和
+pub mod two_sum;
+
 /// 最小的k个数
 pub mod zui_xiao_de_kge_shu_lcof;
