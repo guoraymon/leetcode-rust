@@ -1,3 +1,6 @@
+/// 字符串相加
+mod add_strings;
+
 /// 买卖股票的最佳时机
 pub mod best_time_to_buy_and_sell_stock;
 
