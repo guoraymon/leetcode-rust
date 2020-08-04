@@ -10,6 +10,9 @@ pub mod best_time_to_buy_and_sell_stock_ii;
 /// 爬楼梯
 pub mod climbing_stairs;
 
+/// 课程表
+mod course_schedule;
+
 /// 斐波那契数
 pub mod fibonacci_number;
 
