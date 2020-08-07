@@ -52,6 +52,9 @@ pub mod maximum_subarray;
 /// 矩形重叠
 pub mod rectangle_overlap;
 
+/// 相同的树
+mod same_tree;
+
 /// 三角形最小路径和
 pub mod triangle;
 
