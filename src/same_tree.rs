@@ -1,4 +1,4 @@
-// Definition for a binary tree node.
+// Definition for a binary macros node.
 #[derive(Debug, PartialEq, Eq)]
 pub struct TreeNode {
     pub val: i32,
@@ -77,25 +77,6 @@ impl Solution {
 #[cfg(test)]
 mod tests {
     use super::*;
-
-    // TreeNode 宏
-    macro_rules! tree {
-        () => {
-            None
-        };
-
-        ($val:expr) => {
-            Some(Rc::new(RefCell::new(TreeNode::new($val))))
-        };
-
-        ($val:expr, $left:expr, $right:expr) => {{
-            let mut t = TreeNode::new($val);
-            t.left = $left;
-            t.right = $right;
-
-            Some(Rc::new(RefCell::new(t)))
-        }};
-    }
 
     #[test]
     fn dp() {

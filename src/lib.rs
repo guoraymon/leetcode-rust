@@ -1,3 +1,6 @@
+#[macro_use]
+pub mod macros;
+
 /// 字符串相加
 mod add_strings;
 
