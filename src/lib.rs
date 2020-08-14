@@ -64,5 +64,8 @@ pub mod triangle;
 /// 两数之和
 pub mod two_sum;
 
+/// 有效的括号
+mod valid_parentheses;
+
 /// 最小的k个数
 pub mod zui_xiao_de_kge_shu_lcof;
