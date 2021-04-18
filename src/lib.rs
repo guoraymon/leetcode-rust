@@ -69,3 +69,6 @@ mod valid_parentheses;
 
 /// 最小的k个数
 pub mod zui_xiao_de_kge_shu_lcof;
+
+/// 删除有序数组中的重复项
+mod remove_duplicates_from_sorted_array;
