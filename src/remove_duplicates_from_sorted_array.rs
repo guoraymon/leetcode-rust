@@ -43,16 +43,14 @@ impl Solution {
             0 => 0,
             1 => 1,
             n => {
-                let mut fast = 1;
-                let mut slow = 1;
-                while fast < n {
-                    if nums[fast] != nums[fast - 1] {
-                        nums[slow] = nums[fast];
-                        slow += 1;
+                let mut j = 1;
+                for i in 1..n {
+                    if nums[i] != nums[i - 1] {
+                        nums[j] = nums[i];
+                        j += 1;
                     }
-                    fast += 1;
                 }
-                slow as i32
+                j as i32
             }
         }
     }
