@@ -72,3 +72,6 @@ pub mod zui_xiao_de_kge_shu_lcof;
 
 /// 删除有序数组中的重复项
 mod remove_duplicates_from_sorted_array;
+
+/// 移除元素
+mod remove_element;
