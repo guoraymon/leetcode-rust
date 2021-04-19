@@ -1,4 +1,4 @@
-/// 26. 删除有序数组中的重复项
+/// 删除有序数组中的重复项
 ///
 /// 来源：[LeetCode](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
 ///
@@ -61,7 +61,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn dp() {
+    fn test() {
         assert_eq!(Solution::remove_duplicates(&mut vec![1, 1, 2]), 2);
         assert_eq!(
             Solution::remove_duplicates(&mut vec![0, 0, 1, 1, 1, 2, 2, 3, 3, 4]),
