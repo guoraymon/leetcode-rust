@@ -71,7 +71,10 @@ mod valid_parentheses;
 pub mod zui_xiao_de_kge_shu_lcof;
 
 /// 删除有序数组中的重复项
-mod remove_duplicates_from_sorted_array;
+pub mod remove_duplicates_from_sorted_array;
 
 /// 移除元素
-mod remove_element;
+pub mod remove_element;
+
+/// 实现 strStr()
+pub mod implement_strstr;
