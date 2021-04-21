@@ -59,10 +59,10 @@ mod tests {
     fn test() {
         let mut nums = vec![3, 2, 2, 3];
         assert_eq!(Solution::remove_element(&mut nums, 3), 2);
-        assert_eq!(nums[0..2], vec![2, 2]);
+        assert_eq!(nums[0..2], [2, 2]);
 
         let mut nums = vec![0, 1, 2, 2, 3, 0, 4, 2];
         assert_eq!(Solution::remove_element(&mut nums, 2), 5);
-        assert_eq!(nums[0..5], vec![0, 1, 3, 0, 4]);
+        assert_eq!(nums[0..5], [0, 1, 3, 0, 4]);
     }
 }

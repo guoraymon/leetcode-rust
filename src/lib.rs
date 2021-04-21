@@ -2,7 +2,7 @@
 pub mod macros;
 
 /// 字符串相加
-mod add_strings;
+pub mod add_strings;
 
 /// 买卖股票的最佳时机
 pub mod best_time_to_buy_and_sell_stock;
@@ -14,7 +14,7 @@ pub mod best_time_to_buy_and_sell_stock_ii;
 pub mod climbing_stairs;
 
 /// 课程表
-mod course_schedule;
+pub mod course_schedule;
 
 /// 斐波那契数
 pub mod fibonacci_number;
@@ -56,7 +56,7 @@ pub mod maximum_subarray;
 pub mod rectangle_overlap;
 
 /// 相同的树
-mod same_tree;
+pub mod same_tree;
 
 /// 三角形最小路径和
 pub mod triangle;
@@ -65,7 +65,7 @@ pub mod triangle;
 pub mod two_sum;
 
 /// 有效的括号
-mod valid_parentheses;
+pub mod valid_parentheses;
 
 /// 最小的k个数
 pub mod zui_xiao_de_kge_shu_lcof;
