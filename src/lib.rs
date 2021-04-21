@@ -78,3 +78,6 @@ pub mod remove_element;
 
 /// 实现 strStr()
 pub mod implement_strstr;
+
+/// 解码方法
+pub mod decode_ways;
